@@ -6,16 +6,47 @@
 //
 
 import SwiftUI
+import SwiftfulUI
+import SwiftfulRouting
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        TabView {
+            HomeView()
+                    .tabItem {
+                        Label(
+                            "Home",
+                            systemImage: "house"
+                        )
+                    }
+            Text(
+                "Users"
+            )
+            .tabItem {
+                Label(
+                    "Users",
+                    systemImage: "person"
+                )
+            }
+            Text(
+                "Explore"
+            )
+            .tabItem {
+                Label(
+                    "Explore",
+                    systemImage: "globe"
+                )
+            }
+            Text(
+                "Settings"
+            )
+            .tabItem {
+                Label(
+                    "Settings",
+                    systemImage: "gear"
+                )
+                }
         }
-        .padding()
     }
 }
 

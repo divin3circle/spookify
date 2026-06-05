@@ -6,6 +6,15 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		7D45AE3D2FC406C500CAD3CA /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 7D45AE3C2FC406C500CAD3CA /* SDWebImageSwiftUI */; };
+		7D45AE402FC4072700CAD3CA /* ImageLoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D45AE3F2FC4072700CAD3CA /* ImageLoaderView.swift */; };
+		7D45AE422FC4082F00CAD3CA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D45AE412FC4082F00CAD3CA /* Constants.swift */; };
+		7D45AE6E2FC428BB00CAD3CA /* SwiftfulRouting in Frameworks */ = {isa = PBXBuildFile; productRef = 7D45AE6D2FC428BB00CAD3CA /* SwiftfulRouting */; };
+		7D45AE712FC428CE00CAD3CA /* SwiftfulUI in Frameworks */ = {isa = PBXBuildFile; productRef = 7D45AE702FC428CE00CAD3CA /* SwiftfulUI */; };
+		7D45AEB32FC42BBD00CAD3CA /* AppFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D45AEB22FC42BBD00CAD3CA /* AppFonts.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		7D45AE1F2FC3FF3C00CAD3CA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,11 +36,27 @@
 		7D45AE112FC3FF3900CAD3CA /* Spookify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Spookify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D45AE1E2FC3FF3C00CAD3CA /* SpookifyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpookifyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D45AE282FC3FF3C00CAD3CA /* SpookifyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpookifyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D45AE3F2FC4072700CAD3CA /* ImageLoaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoaderView.swift; sourceTree = "<group>"; };
+		7D45AE412FC4082F00CAD3CA /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		7D45AEB22FC42BBD00CAD3CA /* AppFonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFonts.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		7D45AEB12FC42B6400CAD3CA /* Exceptions for "Spookify" folder in "Spookify" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 7D45AE102FC3FF3900CAD3CA /* Spookify */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		7D45AE132FC3FF3900CAD3CA /* Spookify */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				7D45AEB12FC42B6400CAD3CA /* Exceptions for "Spookify" folder in "Spookify" target */,
+			);
 			path = Spookify;
 			sourceTree = "<group>";
 		};
@@ -52,6 +77,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D45AE712FC428CE00CAD3CA /* SwiftfulUI in Frameworks */,
+				7D45AE3D2FC406C500CAD3CA /* SDWebImageSwiftUI in Frameworks */,
+				7D45AE6E2FC428BB00CAD3CA /* SwiftfulRouting in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				7D45AE132FC3FF3900CAD3CA /* Spookify */,
+				7D45AE3E2FC406E400CAD3CA /* Shared */,
 				7D45AE212FC3FF3C00CAD3CA /* SpookifyTests */,
 				7D45AE2B2FC3FF3C00CAD3CA /* SpookifyUITests */,
 				7D45AE122FC3FF3900CAD3CA /* Products */,
@@ -90,6 +119,16 @@
 				7D45AE282FC3FF3C00CAD3CA /* SpookifyUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		7D45AE3E2FC406E400CAD3CA /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				7D45AE3F2FC4072700CAD3CA /* ImageLoaderView.swift */,
+				7D45AE412FC4082F00CAD3CA /* Constants.swift */,
+				7D45AEB22FC42BBD00CAD3CA /* AppFonts.swift */,
+			);
+			path = Shared;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -112,6 +151,9 @@
 			);
 			name = Spookify;
 			packageProductDependencies = (
+				7D45AE3C2FC406C500CAD3CA /* SDWebImageSwiftUI */,
+				7D45AE6D2FC428BB00CAD3CA /* SwiftfulRouting */,
+				7D45AE702FC428CE00CAD3CA /* SwiftfulUI */,
 			);
 			productName = Spookify;
 			productReference = 7D45AE112FC3FF3900CAD3CA /* Spookify.app */;
@@ -195,6 +237,11 @@
 			);
 			mainGroup = 7D45AE082FC3FF3900CAD3CA;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				7D45AE3B2FC406C500CAD3CA /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+				7D45AE6C2FC428BB00CAD3CA /* XCRemoteSwiftPackageReference "SwiftfulRouting" */,
+				7D45AE6F2FC428CE00CAD3CA /* XCRemoteSwiftPackageReference "SwiftfulUI" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 7D45AE122FC3FF3900CAD3CA /* Products */;
 			projectDirPath = "";
@@ -236,6 +283,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D45AE402FC4072700CAD3CA /* ImageLoaderView.swift in Sources */,
+				7D45AEB32FC42BBD00CAD3CA /* AppFonts.swift in Sources */,
+				7D45AE422FC4082F00CAD3CA /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -400,11 +450,13 @@
 				DEVELOPMENT_TEAM = J73954XJ54;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Spookify/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -432,11 +484,13 @@
 				DEVELOPMENT_TEAM = J73954XJ54;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Spookify/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -578,6 +632,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7D45AE3B2FC406C500CAD3CA /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.1.4;
+			};
+		};
+		7D45AE6C2FC428BB00CAD3CA /* XCRemoteSwiftPackageReference "SwiftfulRouting" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftfulThinking/SwiftfulRouting.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.2.1;
+			};
+		};
+		7D45AE6F2FC428CE00CAD3CA /* XCRemoteSwiftPackageReference "SwiftfulUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftfulThinking/SwiftfulUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7D45AE3C2FC406C500CAD3CA /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7D45AE3B2FC406C500CAD3CA /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+		7D45AE6D2FC428BB00CAD3CA /* SwiftfulRouting */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7D45AE6C2FC428BB00CAD3CA /* XCRemoteSwiftPackageReference "SwiftfulRouting" */;
+			productName = SwiftfulRouting;
+		};
+		7D45AE702FC428CE00CAD3CA /* SwiftfulUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7D45AE6F2FC428CE00CAD3CA /* XCRemoteSwiftPackageReference "SwiftfulUI" */;
+			productName = SwiftfulUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7D45AE092FC3FF3900CAD3CA /* Project object */;
 }
